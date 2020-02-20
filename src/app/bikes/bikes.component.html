@@ -1,0 +1,20 @@
+<div>
+    <h1>add new Bike Details</h1>
+  
+      <form  #f="ngForm" (ngSubmit)="addProduct(f.value)">
+       <label>Name:</label><input type="text" name="name" id="name" placeholder="name" ngModel><br>
+       <label>CC:</label><input type="text" name="cc" id="cc" placeholder="cc" ngModel><br>
+       <label>Color:</label><input type="text" name="color" id="color" placeholder="color" ngModel><br>
+       <label>Price:</label><input type="text" name="price" id="price" placeholder="price" ngModel>
+       <input type="submit" value="Add Product">
+    </form> 
+    <br>  
+<button routerLink="/">HOme page</button>
+<br>
+<h3 *ngIf='isAdded'>{{ confirmation }}</h3>
+</div>
+
+
+   
+
+

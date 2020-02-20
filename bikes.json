@@ -1,0 +1,34 @@
+{
+    "bikes" :[
+        {
+            "name":"bajaj",
+            "cc":"160",
+            "color":"red",
+            "price":"120000"
+        },
+        {
+            "name":"hero",
+            "cc":"120",
+            "color":"black",
+            "price":"80000"
+        },
+        {
+            "name":"harley davidson",
+            "cc":"1200",
+            "color":"mat black",
+            "price":"600000"
+        },
+        {
+            "name":"honda",
+            "cc":"120",
+            "color":"yellow",
+            "price":"12000"
+        },
+        {
+            "name":"yamaha",
+            "cc":"160",
+            "color":"blue",
+            "price":"120000"
+        }
+    ]
+}

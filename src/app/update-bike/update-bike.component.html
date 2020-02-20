@@ -1,0 +1,15 @@
+<div>
+    <h1>Update Bike Details</h1>
+  
+      <form  #f="ngForm" (ngSubmit)="updateBike(f.value)">
+         
+       <label>Name:</label><input type="text" name="name" id="name" placeholder="name" [(ngModel)]="bikes.name" ngModel><br>
+       <label>CC:</label><input type="text" name="cc" id="cc" placeholder="cc" [(ngModel)]="bikes.cc" ngModel><br>
+       <label>Color:</label><input type="text" name="color" id="color" placeholder="color" [(ngModel)]="bikes.color" ngModel><br>
+       <label>Price:</label><input type="text" name="price" id="price" placeholder="price" [(ngModel)]="bikes.price" ngModel>
+       <input type="submit" value="Update Bike">
+       
+    </form> 
+    <br>  
+   
+<button routerLink="/">HOme page</button>

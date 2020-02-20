@@ -1,0 +1,29 @@
+<div>
+   <table style="border-style: solid;">
+     <th>Id</th>
+     <th>Name</th>
+     <th>CC</th>
+    <th>color</th>
+    <th>price</th>
+    <th></th>
+    <th></th>
+    <tr *ngFor="let bike of Bikes">
+        <td>{{bike.id}}</td>
+        <td>{{bike.name}}</td>
+        <td>{{bike.cc}}</td>
+        <td>{{bike.color}}</td>
+        <td>{{bike.price}}</td>
+        <td (click)="deleteBike(bike.id)"><a>Delete</a></td>
+        <td [routerLink]= "['/update',bike.id]"><a>Update</a></td>
+
+    </tr>
+
+   </table>
+
+<button routerLink='/bikes'>Add Bikes</button>
+
+    </div>
+
+
+    <a (click)="a(false)">click me</a>
+    <div *ngFor="let d of data">{{d}}</div>
